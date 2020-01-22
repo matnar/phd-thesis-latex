@@ -1,0 +1,50 @@
+\documentclass{mnthesis}
+
+% pacchetto dimostrativo, puo' essere rimosso.
+\usepackage{lipsum}
+
+\begin{document}
+
+% -- ----- ----- ----- ----- ----- ----- 
+% -- Frontespizio 
+% -- ----- ----- ----- ----- ----- ----- 
+%
+\title{Doctoral Thesis Title} 
+%
+%
+\author{Matteo Nardelli}
+\project{Doctorate Thesis}
+\date{\textsc{April 2018}}
+\academicyear{2016/17}
+\phdcycle{Cycle XXX}
+\phdname{Doctorate in Computer Science, Control and Geoinformation}
+\supervisor{Advisor Name}
+\phdcoordinator{Coordinato Name}
+\university{University of Rome Tor Vergata}
+\department{Department of Civil Engineering and Computer Science Engineering}
+
+
+% -- ----- ----- ----- ----- ----- ----- 
+\makefrontpage
+\frontsection
+%
+\input{fm_acknowledgements}
+%
+\input{fm_abstract}
+%
+\tableofcontents
+% -- ----- ----- ----- ----- ----- ----- 
+
+\mainsection
+
+\input{chap_introduction}
+\input{chap_related}
+\input{chap_conclusion}
+
+% -- ----- ----- ----- ----- ----- ----- 
+% -- Bibliografia
+\bibliographystyle{abbrv}
+\bibliography{biblio}
+% -- ----- ----- ----- ----- ----- ----- 
+
+\end{document}
