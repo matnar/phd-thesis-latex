@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mnthesis}[2017/07/19 v1.0]
+\ProvidesClass{simple-thesis}[2017/07/19 v1.0]
 \LoadClass[11pt,a4paper,twoside,openright]{book}
 
 %%%%% %%%%% %%%%% %%%%% %%%%% %%%%% %%%%% %%%%%

@@ -1,16 +1,12 @@
-\documentclass{mnthesis}
+\documentclass{simple-thesis}
 
-% pacchetto dimostrativo, puo' essere rimosso.
+% package for generating placeholder text; can be removed
 \usepackage{lipsum}
 
 \begin{document}
 
 % -- ----- ----- ----- ----- ----- ----- 
-% -- Frontespizio 
-% -- ----- ----- ----- ----- ----- ----- 
-%
 \title{Doctoral Thesis Title} 
-%
 %
 \author{Matteo Nardelli}
 \project{Doctorate Thesis}
@@ -19,30 +15,45 @@
 \phdcycle{Cycle XXX}
 \phdname{Doctorate in Computer Science, Control and Geoinformation}
 \supervisor{Advisor Name}
-\phdcoordinator{Coordinato Name}
-\university{University of Rome Tor Vergata}
+\phdcoordinator{PhD Coordinator Name}
+\university{Tor Vergata University of Rome}
 \department{Department of Civil Engineering and Computer Science Engineering}
-
 
 % -- ----- ----- ----- ----- ----- ----- 
 \makefrontpage
 \frontsection
 %
-\input{fm_acknowledgements}
+\chapter*{Acknowledgments}
+\lipsum[1][1]
+
 %
-\input{fm_abstract}
+\chapter*{Abstract}
+\lipsum[1]
+
 %
 \tableofcontents
 % -- ----- ----- ----- ----- ----- ----- 
 
 \mainsection
 
-\input{chap_introduction}
-\input{chap_related}
-\input{chap_conclusion}
+\chapter{Introduction}
+\begin{chapabstract}
+    \lipsum[1][1-5]
+\end{chapabstract}
+
+\lipsum[1]
+\cite{lamport1994latex}
+
+\section{Section One}
+\lipsum[1]
+
+\section{Section Two}
+\lipsum[1]
+
+\chapter{Conclusion}
+\lipsum[1]
 
 % -- ----- ----- ----- ----- ----- ----- 
-% -- Bibliografia
 \bibliographystyle{abbrv}
 \bibliography{biblio}
 % -- ----- ----- ----- ----- ----- ----- 
